@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+		<title>Mercadinho Vizinhança</title>
+	</head>
+	<body>
+		<h1>Bem Vindo ao Mercado Vizinhaça</h1><br>
+		<h3><i><b><p>Onde comprar barato é sempre aqui</p></b></i><br></h3>
+		<hr>
+		<h1>
+			<pre>
+
+				<nav class="menu-principal">
+					<ul>
+						<li><a href="#Nossa História">Nossa História</a></li>
+						<li><a href="#Contato">Contato</a></li>
+						<li><a href="#Localização">Localização</a></li>
+					</ul>
+				</Nav>
+			</pre>
+		</h1>
+		<h2>Nossos Produtos</h2>
+		
+		<div class="slideshow-container">
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 4</div>
+		  <img src="Laticinios.jpg" style="width:100%">
+		  <div class="text">Laticínios</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 4</div>
+		  <img src="Verduras.jpg" style="width:100%">
+		  <div class="text">Verduras</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 4</div>
+		  <img src="Frutas.jpg" style="width:100%">
+		  <div class="text">Frutas</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 4</div>
+			<img src="Mercearia.jpg" style="width:100%">
+			<div class="text">Mercearia</div>
+		  </div>
+		
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span>
+		  <span class="dot"></span> 
+		</div>
+		
+		<script>
+		var slideIndex = 0;
+		showSlides();
+		
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 1400); // Change image every 2 seconds
+		}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	</body>
+	</html
